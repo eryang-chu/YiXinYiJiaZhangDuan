@@ -1,0 +1,127 @@
+//
+//  JZD_AccountLessonForSingleView.m
+//  JiaZhangDuan
+//
+//  Created by 楚二洋 on 2018/9/27.
+//  Copyright © 2018年 楚二洋. All rights reserved.
+//
+
+#import "JZD_LessonForSingleTableViewCell.h"
+#import "JZD_LessonForSingleHeaderTableViewCell.h"
+#import "JZD_ForgetPwdTopView.h"
+#import "JZD_AccountLessonForSingleView.h"
+
+@interface JZD_AccountLessonForSingleView () <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) JZD_ForgetPwdTopView *topView;
+@property (nonatomic, strong) NSIndexPath *index;
+
+@end
+
+@implementation JZD_AccountLessonForSingleView
+- (JZD_ForgetPwdTopView *)topView {
+    if (!_topView) {
+        _topView = [[JZD_ForgetPwdTopView alloc] initWithFrame:CGRectMake(0, 0, DEVICE_WIDTH, 64)];
+    }
+    return _topView;
+}
+
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(self.bounds.origin.x, self.bounds.origin.y - 20, self.bounds.size.width, self.bounds.size.height + 20)];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.tableHeaderView = self.topView;
+        _tableView.backgroundColor = HEX_COLOR(0xf2f2f2);
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        [_tableView registerNib:[UINib nibWithNibName:@"JZD_LessonForSingleTableViewCell" bundle:nil] forCellReuseIdentifier:@"JZD_LessonForSingleTableViewCell"];
+        [_tableView registerNib:[UINib nibWithNibName:@"JZD_LessonForSingleHeaderTableViewCell" bundle:nil] forCellReuseIdentifier:@"JZD_LessonForSingleHeaderTableViewCell"];
+        
+        _tableView.tableFooterView = [UIView new];
+        _tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    }
+    return _tableView;
+}
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    [self addSubview:self.tableView];
+    
+    self.topView.titleLabel.text = @"购课单";
+    @weakify(self);
+    self.topView.backButtonClick = ^{
+        @strongify(self);
+        if (self.backButtonClick) {
+            self.backButtonClick();
+        }
+    };
+}
+
+#pragma mark - TableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (!indexPath.row) {
+        return 50;
+    }
+    return 150;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 3;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (!indexPath.row) {
+        JZD_LessonForSingleHeaderTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"JZD_LessonForSingleHeaderTableViewCell"];
+        
+        @weakify(self);
+        cell.allButtonClick = ^{
+            @strongify(self);
+            if (self.allButtonClick) {
+                self.allButtonClick();
+            }
+        };
+        cell.obligationButtonClick = ^{
+            @strongify(self);
+            if (self.obligationButtonClick) {
+                self.obligationButtonClick();
+            }
+        };
+        cell.paidButtonClick = ^{
+            @strongify(self);
+            if (self.paidButtonClick) {
+                self.paidButtonClick();
+            }
+        };
+        cell.refundButtonClick = ^{
+            @strongify(self);
+            if (self.refundButtonClick) {
+                self.refundButtonClick();
+            }
+        };
+        return cell;
+    }
+    
+    JZD_LessonForSingleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"JZD_LessonForSingleTableViewCell"];
+    cell.actionButtonClick = ^{
+        if (self.actionButtonClick) {
+            self.actionButtonClick(self.index);
+        }
+    };
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.index = indexPath;
+}
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+}
+*/
+
+@end

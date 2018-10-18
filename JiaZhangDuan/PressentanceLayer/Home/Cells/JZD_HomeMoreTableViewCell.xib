@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="JZD_HomeMoreTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容推荐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7K-Zi-ral">
+                        <rect key="frame" x="110" y="0.0" width="100" height="89.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="CTD-zu-CYn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.78823529410000004" green="0.1647058824" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2i-Uv-gdi">
+                        <rect key="frame" x="228" y="0.0" width="80" height="89.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="chW-UR-9b1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="更多&gt;&gt;">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="moreContentButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aX9-Wi-UWZ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="V2i-Uv-gdi" secondAttribute="bottom" id="Ae2-4S-XZa"/>
+                    <constraint firstAttribute="trailing" secondItem="V2i-Uv-gdi" secondAttribute="trailing" constant="12" id="FxJ-tx-i8a"/>
+                    <constraint firstAttribute="bottom" secondItem="e7K-Zi-ral" secondAttribute="bottom" id="M54-e9-FVh"/>
+                    <constraint firstItem="V2i-Uv-gdi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fUF-3V-fsU"/>
+                    <constraint firstItem="e7K-Zi-ral" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qd5-7d-Hv3"/>
+                    <constraint firstItem="e7K-Zi-ral" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="rze-Lw-7aY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="63" y="108"/>
+        </tableViewCell>
+    </objects>
+</document>

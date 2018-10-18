@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="295" id="KGk-i7-Jjw" customClass="JZD_SelectBabyTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="295"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="294.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="家长您好，欢迎来到壹心壹课堂" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urD-Po-nQV">
+                        <rect key="frame" x="0.0" y="65" width="320" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="MoU-0L-irh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择当前要查看信息的宝贝" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pm0-Xf-moO">
+                        <rect key="frame" x="0.0" y="90" width="320" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="BWX-Yy-Zyt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ol4-Gd-rvA" customClass="JZD_SelectBabyCollectionView">
+                        <rect key="frame" x="0.0" y="140" width="320" height="139.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Pm0-Xf-moO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1Rb-sd-sdC"/>
+                    <constraint firstAttribute="trailing" secondItem="Pm0-Xf-moO" secondAttribute="trailing" id="4zT-zZ-4fu"/>
+                    <constraint firstItem="Ol4-Gd-rvA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="679-An-wRH"/>
+                    <constraint firstItem="urD-Po-nQV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="65" id="JEy-ue-cea"/>
+                    <constraint firstAttribute="trailing" secondItem="urD-Po-nQV" secondAttribute="trailing" id="Wev-I1-hQr"/>
+                    <constraint firstItem="Pm0-Xf-moO" firstAttribute="top" secondItem="urD-Po-nQV" secondAttribute="bottom" id="Y8d-ki-AXq"/>
+                    <constraint firstItem="Ol4-Gd-rvA" firstAttribute="top" secondItem="Pm0-Xf-moO" secondAttribute="bottom" id="aKi-u5-k72"/>
+                    <constraint firstAttribute="bottom" secondItem="Ol4-Gd-rvA" secondAttribute="bottom" constant="15" id="tJ0-AI-EHT"/>
+                    <constraint firstAttribute="trailing" secondItem="Ol4-Gd-rvA" secondAttribute="trailing" id="y0G-ZA-sMa"/>
+                    <constraint firstItem="urD-Po-nQV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zU4-7E-Mzr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="selectBabyCollectionView" destination="Ol4-Gd-rvA" id="e2K-Da-CNc"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="132.5"/>
+        </tableViewCell>
+    </objects>
+</document>

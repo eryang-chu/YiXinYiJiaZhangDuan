@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="233" id="KGk-i7-Jjw" customClass="JZD_IntegralHeaderTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="233"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="232.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b8g-b6-Tor">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="232.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_jifenhead" translatesAutoresizingMaskIntoConstraints="NO" id="AkI-d1-hJo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="232.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前积分" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4EG-Fx-eqi">
+                                <rect key="frame" x="0.0" y="15" width="320" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LIt-FQ-Vko"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="888" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2g3-OK-faO">
+                                <rect key="frame" x="0.0" y="55" width="320" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Vv9-J3-bJi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4EG-Fx-eqi" firstAttribute="top" secondItem="b8g-b6-Tor" secondAttribute="top" constant="15" id="0Pl-zu-0S4"/>
+                            <constraint firstItem="AkI-d1-hJo" firstAttribute="top" secondItem="b8g-b6-Tor" secondAttribute="top" id="100-Ta-FMA"/>
+                            <constraint firstItem="AkI-d1-hJo" firstAttribute="leading" secondItem="b8g-b6-Tor" secondAttribute="leading" id="1zX-AD-qnz"/>
+                            <constraint firstAttribute="trailing" secondItem="2g3-OK-faO" secondAttribute="trailing" id="4Lc-aQ-0S7"/>
+                            <constraint firstAttribute="trailing" secondItem="4EG-Fx-eqi" secondAttribute="trailing" id="Iqt-rI-oWt"/>
+                            <constraint firstAttribute="bottom" secondItem="AkI-d1-hJo" secondAttribute="bottom" id="au6-8J-kiw"/>
+                            <constraint firstItem="2g3-OK-faO" firstAttribute="top" secondItem="4EG-Fx-eqi" secondAttribute="bottom" id="c6D-u0-daF"/>
+                            <constraint firstAttribute="trailing" secondItem="AkI-d1-hJo" secondAttribute="trailing" id="dbj-0f-khq"/>
+                            <constraint firstItem="4EG-Fx-eqi" firstAttribute="leading" secondItem="b8g-b6-Tor" secondAttribute="leading" id="jtq-1W-SNd"/>
+                            <constraint firstItem="2g3-OK-faO" firstAttribute="leading" secondItem="b8g-b6-Tor" secondAttribute="leading" id="wWk-Zg-d9b"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="b8g-b6-Tor" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3VH-fb-7LH"/>
+                    <constraint firstItem="b8g-b6-Tor" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="OFP-46-F1u"/>
+                    <constraint firstAttribute="bottom" secondItem="b8g-b6-Tor" secondAttribute="bottom" id="qme-g4-kwh"/>
+                    <constraint firstAttribute="trailing" secondItem="b8g-b6-Tor" secondAttribute="trailing" id="sYV-pc-gQq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="integralLabel" destination="2g3-OK-faO" id="RgH-u7-b79"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="85.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_jifenhead" width="375" height="150"/>
+    </resources>
+</document>

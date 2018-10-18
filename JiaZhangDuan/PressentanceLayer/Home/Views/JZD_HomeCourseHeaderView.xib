@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="g8Y-p6-E92" customClass="JZD_HomeCourseHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJ6-XM-j5e">
+                    <rect key="frame" x="0.0" y="0.0" width="125" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="kAJ-gw-LMc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="班级简介">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="班级简介">
+                        <color key="titleColor" red="0.78823529410000004" green="0.1647058824" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="classButtonClick:" destination="g8Y-p6-E92" eventType="touchUpInside" id="G1x-XI-FIT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqb-oT-dBq">
+                    <rect key="frame" x="125" y="0.0" width="125" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="L6G-pp-NXU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="教师简介">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="教师简介">
+                        <color key="titleColor" red="0.78823529410000004" green="0.1647058824" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="teacherButtonClick:" destination="g8Y-p6-E92" eventType="touchUpInside" id="MQL-ue-WT1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d22-Ku-UGG">
+                    <rect key="frame" x="250" y="0.0" width="125" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="rHi-Nf-VEa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="课程评价">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="课程评价">
+                        <color key="titleColor" red="0.78823529410000004" green="0.1647058824" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="courseButtonClick:" destination="g8Y-p6-E92" eventType="touchUpInside" id="113-uC-Ak0"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mg1-KS-uMz">
+                    <rect key="frame" x="12.5" y="48" width="100" height="2"/>
+                    <color key="backgroundColor" red="0.78823529410000004" green="0.1647058824" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="Fsi-z7-D04"/>
+                        <constraint firstAttribute="width" constant="100" id="jkA-R7-UQL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nfl-0w-hxV">
+                    <rect key="frame" x="0.0" y="50" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="lew-mO-Nr5"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="paH-yH-hPN">
+                    <rect key="frame" x="12" y="66" width="2" height="20"/>
+                    <color key="backgroundColor" red="0.78823529410000004" green="0.1647058824" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="2" id="XNr-sN-E1x"/>
+                        <constraint firstAttribute="height" constant="20" id="hpe-Us-FBp"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJL-B6-XQl">
+                    <rect key="frame" x="313" y="66" width="50" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="6ON-Nb-oRc"/>
+                        <constraint firstAttribute="width" constant="50" id="f6w-cc-Cht"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="数学">
+                        <color key="titleColor" red="0.78823529410000004" green="0.1647058824" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="数学">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="mathButton:" destination="g8Y-p6-E92" eventType="touchUpInside" id="eEu-vs-IUC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSk-Kk-4PT">
+                    <rect key="frame" x="251" y="66" width="50" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="jIT-79-m6R"/>
+                        <constraint firstAttribute="height" constant="20" id="vQa-i6-bHG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="语文">
+                        <color key="titleColor" red="0.78823529410000004" green="0.1647058824" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="语文">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="languageButtonClick:" destination="g8Y-p6-E92" eventType="touchUpInside" id="Wx4-YL-Ss4"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPx-TB-YSU">
+                    <rect key="frame" x="0.0" y="100" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Aii-j4-kLv"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="班级简介" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYw-5f-GSw">
+                    <rect key="frame" x="22" y="51" width="65.5" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="6jt-sL-knc"/>
+                        <constraint firstAttribute="width" priority="250" constant="42" id="Cfd-Jy-JfQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hPx-TB-YSU" firstAttribute="leading" secondItem="g8Y-p6-E92" secondAttribute="leading" id="3UA-83-Mab"/>
+                <constraint firstItem="hPx-TB-YSU" firstAttribute="top" secondItem="uYw-5f-GSw" secondAttribute="bottom" id="3rY-x2-PvW"/>
+                <constraint firstItem="kJL-B6-XQl" firstAttribute="leading" secondItem="SSk-Kk-4PT" secondAttribute="trailing" constant="12" id="4jv-JQ-jal"/>
+                <constraint firstItem="paH-yH-hPN" firstAttribute="leading" secondItem="g8Y-p6-E92" secondAttribute="leading" constant="12" id="7iK-VE-LEk"/>
+                <constraint firstAttribute="trailing" secondItem="d22-Ku-UGG" secondAttribute="trailing" id="8dc-LW-ChR"/>
+                <constraint firstAttribute="trailing" secondItem="hPx-TB-YSU" secondAttribute="trailing" id="9hX-MG-oWm"/>
+                <constraint firstItem="Mg1-KS-uMz" firstAttribute="top" secondItem="CJ6-XM-j5e" secondAttribute="bottom" id="DPU-Dy-sLP"/>
+                <constraint firstItem="nfl-0w-hxV" firstAttribute="leading" secondItem="g8Y-p6-E92" secondAttribute="leading" id="EgB-Vj-5be"/>
+                <constraint firstItem="d22-Ku-UGG" firstAttribute="leading" secondItem="gqb-oT-dBq" secondAttribute="trailing" id="J9P-BW-JTw"/>
+                <constraint firstItem="d22-Ku-UGG" firstAttribute="top" secondItem="g8Y-p6-E92" secondAttribute="top" id="P4k-cb-Azj"/>
+                <constraint firstItem="uYw-5f-GSw" firstAttribute="leading" secondItem="paH-yH-hPN" secondAttribute="trailing" constant="8" id="SKD-QY-DKF"/>
+                <constraint firstItem="gqb-oT-dBq" firstAttribute="leading" secondItem="CJ6-XM-j5e" secondAttribute="trailing" id="SyK-zE-LBD"/>
+                <constraint firstItem="gqb-oT-dBq" firstAttribute="top" secondItem="g8Y-p6-E92" secondAttribute="top" id="TZa-4e-hPO"/>
+                <constraint firstItem="paH-yH-hPN" firstAttribute="top" secondItem="nfl-0w-hxV" secondAttribute="bottom" constant="15" id="Vf2-2b-FGs"/>
+                <constraint firstItem="Mg1-KS-uMz" firstAttribute="leading" secondItem="g8Y-p6-E92" secondAttribute="leading" constant="12.5" id="Wc6-AQ-ahx"/>
+                <constraint firstItem="nfl-0w-hxV" firstAttribute="top" secondItem="Mg1-KS-uMz" secondAttribute="bottom" id="bKg-Ll-nkT"/>
+                <constraint firstItem="SSk-Kk-4PT" firstAttribute="top" secondItem="nfl-0w-hxV" secondAttribute="bottom" constant="15" id="cHX-FL-cgs"/>
+                <constraint firstAttribute="trailing" secondItem="nfl-0w-hxV" secondAttribute="trailing" id="eL2-EG-nqQ"/>
+                <constraint firstAttribute="trailing" secondItem="kJL-B6-XQl" secondAttribute="trailing" constant="12" id="g9K-YT-ifu"/>
+                <constraint firstItem="CJ6-XM-j5e" firstAttribute="top" secondItem="g8Y-p6-E92" secondAttribute="top" id="kpD-NV-lNp"/>
+                <constraint firstItem="gqb-oT-dBq" firstAttribute="width" secondItem="CJ6-XM-j5e" secondAttribute="width" id="lKk-pg-bv1"/>
+                <constraint firstItem="kJL-B6-XQl" firstAttribute="top" secondItem="nfl-0w-hxV" secondAttribute="bottom" constant="15" id="oHP-Sm-VUu"/>
+                <constraint firstItem="CJ6-XM-j5e" firstAttribute="leading" secondItem="g8Y-p6-E92" secondAttribute="leading" id="sZd-Gg-zQB"/>
+                <constraint firstItem="d22-Ku-UGG" firstAttribute="width" secondItem="CJ6-XM-j5e" secondAttribute="width" id="uss-Rf-Ir4"/>
+                <constraint firstItem="uYw-5f-GSw" firstAttribute="top" secondItem="nfl-0w-hxV" secondAttribute="bottom" id="vrk-Cp-B8F"/>
+            </constraints>
+            <connections>
+                <outlet property="classButton" destination="CJ6-XM-j5e" id="Kix-bA-K00"/>
+                <outlet property="courseButton" destination="d22-Ku-UGG" id="gHu-a0-eo5"/>
+                <outlet property="introduceLabel" destination="uYw-5f-GSw" id="dR2-wf-bki"/>
+                <outlet property="languageButton" destination="SSk-Kk-4PT" id="5th-pu-DfX"/>
+                <outlet property="mathButton" destination="kJL-B6-XQl" id="AS4-WZ-AfL"/>
+                <outlet property="redLineLeftSpace" destination="Wc6-AQ-ahx" id="9Ac-pQ-FpX"/>
+                <outlet property="redLineView" destination="Mg1-KS-uMz" id="e5a-da-j43"/>
+                <outlet property="teacherButton" destination="gqb-oT-dBq" id="PDj-MJ-q1N"/>
+            </connections>
+            <point key="canvasLocation" x="59.5" y="174.5"/>
+        </view>
+    </objects>
+</document>
